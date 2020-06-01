@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .font {
+            font-family: "Lucida Grande", Tahoma, Arial, Verdana, sans-serif;
+        }
+
+        .pay-wrapper {
+            display: inline-block;
+        }
+
+        .pay-wrapper .title {
+            display: block;
+            font-size: 10px;
+        }
+
+        .pay-row {
+            vertical-align: top;
+        }
+
+        .hide {
+            opacity: 0;
+        }
+    </style>
+</head>
+
+<body class="font">
+    <form>
+        <h3>Market Research Survey</h3>
+        <p>Please take a few moments to complete this satisfaction survey.</p>
+        <hr />
+        <p>What is your age range? <br>
+            <select name="age">
+                <option value="low">18-24</option>
+                <option value="medium">25-34</option>
+                <option value="high">35-50</option>
+                <option value="veryhigh">50+</option>
+            </select>
+        </p>
+        <p>What is your yearly income range?<br>
+            <select name="thunhap">
+                <option value="thap">$0 - $25,000</option>
+                <option value="tb">$25,001 - $50,000</option>
+                <option value="cao">$50,001 - $100,000</option>
+                <option value="ratcao">$100,000+</option>
+            </select>
+        </p>
+        <p>Gender Identity <br>
+            <input type="radio" name="gender" value="male"> Male <br>
+            <input type="radio" name="gender" value="female"> Female <br>
+            <input type="radio" name="gender" value="nonbinary"> Nonbinary <br>
+            <input type="radio" name="gender" value="other"> Other
+        </p>
+        <p>Which of the following products have your purchased in the last 2 months. Please check all that apply.<br>
+            <input type="checkbox" name="product" value="product1"> Product 1 <br>
+            <input type="checkbox" name="product" value="product2"> Product 2 <br>
+            <input type="checkbox" name="product" value="product3"> Product 3
+        </p>
+        <p>How often would you use our new product?
+            <input type="radio" name="time" value="daily"> Daily <br>
+            <input type="radio" name="time" value="weekly"> Weekly <br>
+            <input type="radio" name="time" value="monthly"> Monthly
+        </p>
+        <p>What would you pay for the new product?</p><br>
+        <div class="pay-row">
+            <div class="pay-wrapper">
+                <span>$</span>
+                <span class="title hide">. </span>
+            </div>
+            <div class="pay-wrapper"><input type="text" name="first"><span class="title">Dollars</span></div>
+            <div class="pay-wrapper">
+                <span>.</span>
+                <span class="title hide">. </span>
+            </div>
+            <div class="pay-wrapper"><input type="text" name="last" maxlength="2" /><span class="title">Cents</span></div>
+        </div>
+    </form>
+
+
+
+
+
+</body>
+
+</html>
